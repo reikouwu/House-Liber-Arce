@@ -1,6 +1,12 @@
 from datetime import datetime, timezone
 from typing import Dict, List
 
+from app.db import Base, engine
+from app.models.post import Post  # noqa: F401
+from app.models.user import User  # noqa: F401
+
+Base.metadata.create_all(bind=engine)
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
