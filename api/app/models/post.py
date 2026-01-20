@@ -9,5 +9,6 @@ class Post(Base):
     section_id = Column(String(100), index=True, nullable=False)
     author = Column(String(64), nullable=False)
     content = Column(Text, nullable=False)
-    tags = Column(String(500), nullable=True)  # store comma-separated for now
+    tags = Column(String(500), nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+

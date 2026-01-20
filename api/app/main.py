@@ -23,6 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
@@ -192,3 +193,4 @@ def get_public_races_doc():
             "Add your Mortisian Kingdom Race Doc text here as you build it out.\n"
         ),
     }
+
