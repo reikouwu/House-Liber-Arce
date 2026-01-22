@@ -181,9 +181,7 @@ def create_section_post(section_id: str, payload: PostCreate):
     }
     posts_by_section.setdefault(section_id, []).append(post)
     return post
-
-
-# Public manual-entry doc placeholder (you will manually write the races doc content here for now)
+# Race documentation endpoint
 @app.get("/public/races")
 def get_public_races_doc():
     return {
