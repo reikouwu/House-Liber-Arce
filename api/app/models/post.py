@@ -7,8 +7,11 @@ class Post(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     section_id = Column(String(100), index=True, nullable=False)
+
     author = Column(String(64), nullable=False)
     content = Column(Text, nullable=False)
-    tags = Column(String(500), nullable=True)
-    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
+    # store tags as a comma-separated string for now (simple MVP)
+    tags = Column(String(500), nullable=True)
+
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
