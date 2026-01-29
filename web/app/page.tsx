@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+// Homepage component
+// with navbar and main content
 export default function Home() {
   return (
     <>
