@@ -26,6 +26,9 @@ export default async function StaffConsolePage() {
   const defaultChannelId = "mission-planning";
 
   // Helper to render a channel link (active state in sidebar)
+
+  // with a badge (e.g. "staff" or "public")
+  // based on simple rules (can be replaced later)
   const renderChannel = (ch: Channel, badgeText: string) => {
     const isActive = ch.id === defaultChannelId;
 
