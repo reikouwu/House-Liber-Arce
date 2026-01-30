@@ -548,3 +548,21 @@ body {
   color: var(--muted);
   margin-top: 8px;
 }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hla-form-grid {
+    grid-template-columns: 1fr;     
+  }
+}   
+@media (min-width: 601px) {
+  .hla-form-grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 901px) {
+  .hla-form-grid-3 {        
+    grid-template-columns: 1fr 1fr 1fr;
+  }   
+}
+

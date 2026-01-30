@@ -1,6 +1,4 @@
 
-// web/app/staff/[id]/post-form.tsx
-// Form component for creating a new post in a staff section.
 "use client";
 
 import { useState } from "react";
