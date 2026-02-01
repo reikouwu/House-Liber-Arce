@@ -584,6 +584,18 @@ body {
 }
 /* ===== End Footer Styling ===== */
 
+/* ===== Button Hover Effects ===== */    
+.hla-primary:hover {
+  filter: brightness(1.1);
+}
+.hla-secondary:hover {
+  background: #1a1a1a;
+}
+/* ===== End Button Hover Effects ===== */
 
-
-
+/* ===== Input Focus Effects ===== */
+.hla-field:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(122, 44,
+  255, 0.3);  
+} 
