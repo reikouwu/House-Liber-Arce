@@ -570,3 +570,20 @@ body {
   font-size: 13px;
   color: var(--muted);
 }
+
+.hla-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .hla-footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+/* ===== End Footer Styling ===== */
+
+
+
+
