@@ -548,21 +548,25 @@ body {
   color: var(--muted);
   margin-top: 8px;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  .hla-form-grid {
-    grid-template-columns: 1fr;     
-  }
-}   
-@media (min-width: 601px) {
-  .hla-form-grid-2 {
-    grid-template-columns: 1fr 1fr;
-  }
+.hla-status.hla-error {
+  color: #ff4d4d;
 }
-@media (min-width: 901px) {
-  .hla-form-grid-3 {        
-    grid-template-columns: 1fr 1fr 1fr;
-  }   
+.hla-status.hla-success {
+  color: #4caf50;   
 }
+.hla-status.hla-loading {
+  color: var(--muted);
+}
+/* ===== End Post Form Styling ===== */
 
+/* ===== Footer Styling ===== */
+.hla-footer {
+  border-top: 1px solid #222;
+  padding: 20px 48px;
+  display: flex;        
+
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+}
