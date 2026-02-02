@@ -557,45 +557,24 @@ body {
 .hla-status.hla-loading {
   color: var(--muted);
 }
-/* ===== End Post Form Styling ===== */
 
-/* ===== Footer Styling ===== */
-.hla-footer {
-  border-top: 1px solid #222;
-  padding: 20px 48px;
-  display: flex;        
+/* css */
 
-  justify-content: space-between;
-  align-items: center;
-  font-size: 13px;
-  color: var(--muted);
+.hla-actions  {
+  margin-top: 14px;
+} 
+.hla-actions .hla-primary {
+  min-width: 100px;
+  text-align: center;
+}
+.hla-actions .hla-secondary {
+  min-width: 100px;
+  text-align: center;
 }
 
-.hla-footer a {
-  color: var(--muted);
-  text-decoration: none;
-}
 @media (max-width: 600px) {
-  .hla-footer {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
+  .hla-form-grid {
+    grid-template-columns: 1fr !important;
   }
 }
-/* ===== End Footer Styling ===== */
 
-/* ===== Button Hover Effects ===== */    
-.hla-primary:hover {
-  filter: brightness(1.1);
-}
-.hla-secondary:hover {
-  background: #1a1a1a;
-}
-/* ===== End Button Hover Effects ===== */
-
-/* ===== Input Focus Effects ===== */
-.hla-field:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 8px rgba(122, 44,
-  255, 0.3);  
-} 
