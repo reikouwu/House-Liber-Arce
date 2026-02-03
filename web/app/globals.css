@@ -558,23 +558,22 @@ body {
   color: var(--muted);
 }
 
-/* css */
 
-.hla-actions  {
-  margin-top: 14px;
-} 
-.hla-actions .hla-primary {
-  min-width: 100px;
-  text-align: center;
+/* Checkbox Styling */
+.hla-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 10px;
 }
-.hla-actions .hla-secondary {
-  min-width: 100px;
-  text-align: center;
+.hla-checkbox input {
+  width: 16px;
+  height: 16px;       
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #101010;
+  cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .hla-form-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
 
