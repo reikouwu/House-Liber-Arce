@@ -576,4 +576,37 @@ body {
   cursor: pointer;
 }
 
+.hla-checkbox input:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.hla-checkbox input:checked::after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+}     
 
+/* Responsive */
+@media (max-width: 600px) {
+  .hla-form-grid {
+
+    display: block;
+  }
+}
+
+/* End Post Form Styling */
+
+/* ===== Footer Styling ===== */
+.hla-footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+} 
