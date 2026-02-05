@@ -589,24 +589,13 @@ body {
   line-height: 16px;
 }     
 
-/* Responsive */
-@media (max-width: 600px) {
-  .hla-form-grid {
+/* Responsive Form Grid */
 
-    display: block;
+@media (min-width: 600px) {
+  .hla-form-grid.hla-two-column {
+    grid-template-columns: 1fr 1fr;
   }
-}
+}   
 
-/* End Post Form Styling */
 
-/* ===== Footer Styling ===== */
-.hla-footer {
-  border-top: 1px solid var(--border);
-  padding: 20px 48px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 13px;
-  color: var(--muted);
-} 
+  
