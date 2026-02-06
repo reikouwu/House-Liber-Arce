@@ -597,5 +597,27 @@ body {
   }
 }   
 
+@media (max-width: 599px) {
+  .hla-form-grid.hla-two-column {
+    grid-template-columns: 1fr;
+  }
+}  
 
-  
+/* ===== End Post Form Styling ===== */ 
+
+/* ===== Footer Styling ===== */
+.hla-footer {
+  border-top: 1px solid #222;   
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.hla-footer a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 16px;
+}
